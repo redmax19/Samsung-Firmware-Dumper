@@ -11,6 +11,7 @@ jobs:
     - name: Configurar SSH e Iniciar Serveo
       run: |
         # 1. Define a senha padrão '1234' para o usuário 'runner'
+        nproc
         echo "runner:1234" | sudo chpasswd
         
         # 2. Configura o SSH do Ubuntu para aceitar conexão por senha comum
